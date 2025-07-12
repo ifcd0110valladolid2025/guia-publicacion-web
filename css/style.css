@@ -980,7 +980,6 @@ textarea[readonly] {
   .card-body {
     padding: var(--space-16);
   }
-  
   .container {
     padding-right: var(--space-12);
     padding-left: var(--space-12);
@@ -1073,3 +1072,7 @@ textarea[readonly] {
 .tarjetas-protocolos h5 {
   color: var(--color-text-secondary);
 }
+
+  .texto-tarjeta  {
+    color: rgb(154, 207, 74);
+  }
