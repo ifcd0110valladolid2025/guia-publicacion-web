@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MF0952_2 - Publicación de páginas web</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <i class="bi bi-globe"></i> MF0952_2 - Publicación de páginas web
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-link text-white"
+                            onclick="mostrarPestana('inicio')">Inicio</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-link text-white"
+                            onclick="mostrarPestana('ftp')">FTP/SFTP</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-link text-white"
+                            onclick="mostrarPestana('sitemap')">Sitemap</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-link text-white"
+                            onclick="mostrarPestana('robots')">Robots.txt</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-link text-white" onclick="mostrarPestana('meta')">Meta
+                            Tags</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-link text-white"
+                            onclick="mostrarPestana('comandos')">Comandos</button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn btn-link text-white"
+                            onclick="mostrarPestana('actividades')">Actividades</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container mt-4">
+        <!-- Tab Navigation -->
+        <ul class="nav nav-tabs" id="mainTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="inicio-tab" onclick="mostrarPestana('inicio')" type="button"
+                    role="tab">
+                    <i class="bi bi-house-door"></i> Inicio
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="ftp-tab" onclick="mostrarPestana('ftp')" type="button" role="tab">
+                    <i class="bi bi-cloud-upload"></i> FTP/SFTP
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="sitemap-tab" onclick="mostrarPestana('sitemap')" type="button" role="tab">
+                    <i class="bi bi-diagram-3"></i> Sitemap
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="robots-tab" onclick="mostrarPestana('robots')" type="button" role="tab">
+                    <i class="bi bi-robot"></i> Robots.txt
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="meta-tab" onclick="mostrarPestana('meta')" type="button" role="tab">
+                    <i class="bi bi-tag"></i> Meta Tags
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="comandos-tab" onclick="mostrarPestana('comandos')" type="button"
+                    role="tab">
+                    <i class="bi bi-terminal"></i> Comandos
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="actividades-tab" onclick="mostrarPestana('actividades')" type="button"
+                    role="tab">
+                    <i class="bi bi-journal-check"></i> Actividades
+                </button>
+            </li>
+        </ul>
+
+        <!-- Tab Content -->
+        <div class="tab-content" id="mainTabsContent">
+            <!-- INICIO TAB -->
+            <div class="tab-pane fade show active" id="inicio" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-primary text-white">
+                                <h3 class="mb-0"><i class="bi bi-info-circle"></i> Módulo MF0952_2 - Publicación de
+                                    páginas web</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <h4>Introducción</h4>
+                                        <p class="lead">
+                                            Este módulo formativo te enseña los fundamentos de la publicación de páginas
+                                            web,
+                                            incluyendo las mejores prácticas para subir contenido a servidores,
+                                            optimizar
+                                            para motores de búsqueda y gestionar archivos web.
+                                        </p>
+
+                                        <h5>Objetivos de aprendizaje</h5>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check-circle text-success me-2"></i>
+                                                Configurar y usar clientes FTP/SFTP como FileZilla
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check-circle text-success me-2"></i>
+                                                Generar archivos sitemap.xml para SEO
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check-circle text-success me-2"></i>
+                                                Crear archivos robots.txt para control de indexación
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check-circle text-success me-2"></i>
+                                                Optimizar meta etiquetas para motores de búsqueda
+                                            </li>
+                                            <li class="list-group-item">
+                                                <i class="bi bi-check-circle text-success me-2"></i>
+                                                Dominar comandos básicos de Windows y Linux
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Navegación rápida</h5>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-outline-primary"
+                                                        onclick="mostrarPestana('ftp')">
+                                                        <i class="bi bi-cloud-upload"></i> FTP/SFTP
+                                                    </button>
+                                                    <button class="btn btn-outline-primary"
+                                                        onclick="mostrarPestana('sitemap')">
+                                                        <i class="bi bi-diagram-3"></i> Generador Sitemap
+                                                    </button>
+                                                    <button class="btn btn-outline-primary"
+                                                        onclick="mostrarPestana('robots')">
+                                                        <i class="bi bi-robot"></i> Generador Robots.txt
+                                                    </button>
+                                                    <button class="btn btn-outline-primary"
+                                                        onclick="mostrarPestana('meta')">
+                                                        <i class="bi bi-tag"></i> Meta Tags
+                                                    </button>
+                                                    <button class="btn btn-outline-primary"
+                                                        onclick="mostrarPestana('comandos')">
+                                                        <i class="bi bi-terminal"></i> Comandos
+                                                    </button>
+                                                    <button class="btn btn-outline-primary"
+                                                        onclick="mostrarPestana('actividades')">
+                                                        <i class="bi bi-journal-check"></i> Actividades
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FTP/SFTP TAB -->
+            <div class="tab-pane fade" id="ftp" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-success text-white">
+                                <h3 class="mb-0"><i class="bi bi-cloud-upload"></i> FTP/SFTP y FileZilla</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4>Diferencias entre FTP y SFTP</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Característica</th>
+                                                        <th>FTP</th>
+                                                        <th>SFTP</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Seguridad</td>
+                                                        <td><span class="badge bg-danger">Sin cifrado</span></td>
+                                                        <td><span class="badge bg-success">Cifrado SSH</span></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Puerto</td>
+                                                        <td>21</td>
+                                                        <td>22</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Autenticación</td>
+                                                        <td>Usuario/contraseña</td>
+                                                        <td>SSH keys o usuario/contraseña</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Velocidad</td>
+                                                        <td>Rápido</td>
+                                                        <td>Ligeramente más lento</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+
+                                        <div class="alert alert-warning">
+                                            <i class="bi bi-exclamation-triangle"></i>
+                                            <strong>Recomendación:</strong> Siempre usa SFTP cuando sea posible por
+                                            seguridad.
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4>Configuración de FileZilla</h4>
+                                        <div class="card bg-light">
+                                            <div class="card-body">
+                                                <h5>Paso a paso:</h5>
+                                                <ol>
+                                                    <li>Descarga FileZilla desde <a
+                                                            href="https://filezilla-project.org/"
+                                                            target="_blank">filezilla-project.org</a></li>
+                                                    <li>Abre el Gestor de Sitios (Ctrl+S)</li>
+                                                    <li>Haz clic en "Sitio nuevo"</li>
+                                                    <li>Configura los datos del servidor:
+                                                        <ul>
+                                                            <li><strong>Servidor:</strong> tu-servidor.com</li>
+                                                            <li><strong>Protocolo:</strong> SFTP</li>
+                                                            <li><strong>Puerto:</strong> 22</li>
+                                                            <li><strong>Usuario:</strong> tu-usuario</li>
+                                                            <li><strong>Contraseña:</strong> tu-contraseña</li>
+                                                        </ul>
+                                                    </li>
+                                                    <li>Haz clic en "Conectar"</li>
+                                                </ol>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                        <h4>Proceso de publicación en 4 pasos</h4>
+                                        <div class="row tarjetas-protocolos">
+                                            <div class="col-md-3">
+                                                <div class="card text-center">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-1-circle-fill text-primary display-4"></i>
+                                                        <h5>Conectar</h5>
+                                                        <p>Conecta al servidor usando SFTP</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card text-center">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-2-circle-fill text-primary display-4"></i>
+                                                        <h5>Navegar</h5>
+                                                        <p>Localiza la carpeta public_html</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card text-center">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-3-circle-fill text-primary display-4"></i>
+                                                        <h5>Subir</h5>
+                                                        <p>Arrastra archivos desde tu PC</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card text-center">
+                                                    <div class="card-body">
+                                                        <i class="bi bi-4-circle-fill text-primary display-4"></i>
+                                                        <h5>Verificar</h5>
+                                                        <p>Comprueba que el sitio funciona</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                        <h4>Resolución de errores comunes</h4>
+                                        <div class="accordion" id="errorAccordion">
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#error403">
+                                                        Error 403 - Acceso denegado
+                                                    </button>
+                                                </h2>
+                                                <div id="error403" class="accordion-collapse collapse show"
+                                                    data-bs-parent="#errorAccordion">
+                                                    <div class="accordion-body">
+                                                        <strong>Causa:</strong> Permisos insuficientes en archivos o
+                                                        carpetas.<br>
+                                                        <strong>Solución:</strong> Cambia los permisos a 755 para
+                                                        carpetas y 644 para archivos.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header">
+                                                    <button class="accordion-button collapsed" type="button"
+                                                        data-bs-toggle="collapse" data-bs-target="#error404">
+                                                        Error 404 - Página no encontrada
+                                                    </button>
+                                                </h2>
+                                                <div id="error404" class="accordion-collapse collapse"
+                                                    data-bs-parent="#errorAccordion">
+                                                    <div class="accordion-body">
+                                                        <strong>Causa:</strong> Archivo no existe o ruta incorrecta.<br>
+                                                        <strong>Solución:</strong> Verifica que el archivo index.html
+                                                        esté en la carpeta correcta.
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- SITEMAP TAB -->
+            <div class="tab-pane fade" id="sitemap" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-info text-white">
+                                <h3 class="mb-0"><i class="bi bi-diagram-3"></i> Generador de Sitemap.xml</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-info">
+                                    <i class="bi bi-info-circle"></i>
+                                    <strong>¿Qué es un sitemap?</strong>
+                                    <ul>
+                                        <li>Es un archivo que enumera todas las páginas importantes de un sitio web.
+                                        </li>
+                                        <li>Ayuda a los motores de búsqueda a entender la estructura de tu sitio.
+                                        <li>Incluye detalles como la última fecha de actualización y la prioridad de
+                                            cada página.</li>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5><i class="bi bi-plus-circle"></i> Añadir URL</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <form id="sitemapForm">
+                                                    <div class="mb-3">
+                                                        <label class="form-label">URL</label>
+                                                        <input type="url" class="form-control" id="sitemapUrl"
+                                                            placeholder="http://localhost:3000/">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Prioridad</label>
+                                                        <select class="form-select" id="sitemapPriority">
+                                                            <option value="1.0">1.0 (Muy alta)</option>
+                                                            <option value="0.9">0.9 (Alta)</option>
+                                                            <option value="0.8" selected>0.8 (Media-alta)</option>
+                                                            <option value="0.7">0.7 (Media)</option>
+                                                            <option value="0.6">0.6 (Media-baja)</option>
+                                                            <option value="0.5">0.5 (Baja)</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Frecuencia</label>
+                                                        <select class="form-select" id="sitemapFreq">
+                                                            <option value="daily">Diariamente</option>
+                                                            <option value="weekly" selected>Semanalmente</option>
+                                                            <option value="monthly">Mensualmente</option>
+                                                            <option value="yearly">Anualmente</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Última modificación</label>
+                                                        <input type="date" class="form-control" id="sitemapDate">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">
+                                                        <i class="bi bi-plus-lg"></i> Añadir URL
+                                                    </button>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between">
+                                                <h5><i class="bi bi-list-ul"></i> URLs añadidas</h5>
+                                                <span class="badge bg-primary" id="sitemapCount">0</span>
+                                            </div>
+                                            <div class="card-body">
+                                                <div id="sitemapList" class="mb-3">
+                                                    <p class="text-muted">No hay URLs añadidas</p>
+                                                </div>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-warning" onclick="cargarEjemplosMapaSitio()">
+                                                        <i class="bi bi-download"></i> Cargar ejemplos
+                                                    </button>
+                                                    <button class="btn btn-success" onclick="generarMapaSitio()">
+                                                        <i class="bi bi-gear"></i> Generar Sitemap
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4" id="sitemapOutput" style="display: none;">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5><i class="bi bi-code-slash"></i> Sitemap.xml generado</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="mb-3">
+                                                    <button class="btn btn-outline-primary me-2"
+                                                        onclick="copiarMapaSitio()">
+                                                        <i class="bi bi-clipboard"></i> Copiar
+                                                    </button>
+                                                    <button class="btn btn-outline-success"
+                                                        onclick="descargarMapaSitio()">
+                                                        <i class="bi bi-download"></i> Descargar
+                                                    </button>
+                                                </div>
+                                                <textarea class="form-control" id="sitemapXml" rows="10"
+                                                    readonly></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ROBOTS TAB -->
+            <div class="tab-pane fade" id="robots" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-warning text-dark">
+                                <h3 class="mb-0"><i class="bi bi-robot"></i> Generador de Robots.txt</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="alert alert-info">
+                                    <i class="bi bi-info-circle"></i>
+                                    <strong>¿Qué es robots.txt?</strong>
+                                    <ul>
+                                        <li>Controla el acceso de bots a tu sitio web.</li>
+                                        <li>Previene la indexación de contenido duplicado o privado.</li>
+                                        <li>Mejora la eficiencia del rastreo de los motores de búsqueda.</li>
+                                    </ul>
+                                    <ul>
+                                        <li><strong>User-agent:</strong> especifica el bot al que se aplican las reglas
+                                            (ej. <code>*</code>, <code>Googlebot</code>).</li>
+                                        <li><strong>Disallow:</strong> bloquea rutas o páginas específicas.</li>
+                                        <li><strong>Allow:</strong> permite el rastreo de rutas dentro de secciones
+                                            bloqueadas (útil con Googlebot).</li>
+                                        <li><strong>Sitemap:</strong> indica la URL del archivo sitemap.xml para
+                                            facilitar la indexación.</li>
+                                    </ul>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5><i class="bi bi-plus-circle"></i> Añadir regla</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <form id="robotsForm">
+                                                    <div class="mb-3">
+                                                        <label class="form-label">User-agent</label>
+                                                        <select class="form-select" id="robotsUserAgent">
+                                                            <option value="*">* (Todos los bots)</option>
+                                                            <option value="Googlebot">Googlebot</option>
+                                                            <option value="Bingbot">Bingbot</option>
+                                                            <option value="Slurp">Slurp (Yahoo)</option>
+                                                            <option value="DuckDuckBot">DuckDuckBot</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Disallow (Denegar)</label>
+                                                        <input type="text" class="form-control" id="robotsDisallow"
+                                                            placeholder="/admin/">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Allow (Permitir)</label>
+                                                        <input type="text" class="form-control" id="robotsAllow"
+                                                            placeholder="/public/">
+                                                    </div>
+                                                    <div class="mb-3">
+                                                        <label class="form-label">Sitemap URL</label>
+                                                        <input type="url" class="form-control" id="robotsSitemap"
+                                                            placeholder="https://ejemplo.com/sitemap.xml">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary">
+                                                        <i class="bi bi-plus-lg"></i> Añadir regla
+                                                    </button>
+                                                </form>
+
+                                                <div class="mt-4">
+                                                    <h6>Plantillas predefinidas:</h6>
+                                                    <div class="d-grid gap-2">
+                                                        <button class="btn btn-outline-success btn-sm"
+                                                            onclick="cargarPlantillaRobots('allow')">
+                                                            Permitir todo
+                                                        </button>
+                                                        <button class="btn btn-outline-warning btn-sm"
+                                                            onclick="cargarPlantillaRobotse('admin')">
+                                                            Bloquear admin
+                                                        </button>
+                                                        <button class="btn btn-outline-danger btn-sm"
+                                                            onclick="cargarPlantillaRobots('private')">
+                                                            Sitio privado
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-header d-flex justify-content-between">
+                                                <h5><i class="bi bi-list-ul"></i> Reglas añadidas</h5>
+                                                <span class="badge bg-warning text-light-emphasis"
+                                                    id="robotsCount">0</span>
+                                            </div>
+                                            <div class="card-body">
+                                                <div id="robotsList" class="mb-3">
+                                                    <p class="text-muted">No hay reglas añadidas</p>
+                                                </div>
+                                                <div class="d-grid gap-2">
+                                                    <button class="btn btn-success" onclick="generarRobots()">
+                                                        <i class="bi bi-gear"></i> Generar Robots.txt
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4" id="robotsOutput" style="display: none;">
+                                    <div class="col-12">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5><i class="bi bi-code-slash"></i> Robots.txt generado</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="mb-3">
+                                                    <button class="btn btn-outline-primary me-2"
+                                                        onclick="copiarRobots()">
+                                                        <i class="bi bi-clipboard"></i> Copiar
+                                                    </button>
+                                                    <button class="btn btn-outline-success" onclick="descargarRobots()">
+                                                        <i class="bi bi-download"></i> Descargar
+                                                    </button>
+                                                </div>
+                                                <textarea class="form-control" id="robotsTxt" rows="10"
+                                                    readonly></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- META TAGS TAB -->
+            <div class="tab-pane fade" id="meta" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-secondary text-white">
+                                <h3 class="mb-0"><i class="bi bi-tag"></i> Generador de Meta Etiquetas</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <form id="metaForm">
+                                            <div class="mb-3">
+                                                <label class="form-label">Título <span class="text-muted">(máx. 60
+                                                        caracteres)</span></label>
+                                                <input type="text" class="form-control" id="metaTitle" maxlength="60">
+                                                <div class="form-text">
+                                                    Caracteres: <span id="titleCount">0</span>/60
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Descripción <span class="text-muted">(máx. 160
+                                                        caracteres)</span></label>
+                                                <textarea class="form-control" id="metaDescription" maxlength="160"
+                                                    rows="3"></textarea>
+                                                <div class="form-text">
+                                                    Caracteres: <span id="descCount">0</span>/160
+                                                </div>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Palabras clave</label>
+                                                <input type="text" class="form-control" id="metaKeywords"
+                                                    placeholder="web, desarrollo, programación">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Autor</label>
+                                                <input type="text" class="form-control" id="metaAuthor">
+                                            </div>
+
+                                            <h5>Open Graph (Facebook/LinkedIn)</h5>
+                                            <div class="mb-3">
+                                                <label class="form-label">OG Title</label>
+                                                <input type="text" class="form-control" id="ogTitle">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">OG Description</label>
+                                                <textarea class="form-control" id="ogDescription" rows="2"></textarea>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">OG Image URL</label>
+                                                <input type="url" class="form-control" id="ogImage">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">OG URL</label>
+                                                <input type="url" class="form-control" id="ogUrl">
+                                            </div>
+
+                                            <h5>Twitter Cards</h5>
+                                            <div class="mb-3">
+                                                <label class="form-label">Twitter Card Type</label>
+                                                <select class="form-select" id="twitterCard">
+                                                    <option value="summary">Summary</option>
+                                                    <option value="summary_large_image">Summary Large Image</option>
+                                                </select>
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Twitter Title</label>
+                                                <input type="text" class="form-control" id="twitterTitle">
+                                            </div>
+                                            <div class="mb-3">
+                                                <label class="form-label">Twitter Description</label>
+                                                <textarea class="form-control" id="twitterDescription"
+                                                    rows="2"></textarea>
+                                            </div>
+
+                                            <button type="button" class="btn btn-primary" onclick="generarMeta()">
+                                                <i class="bi bi-gear"></i> Generar Meta Tags
+                                            </button>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5><i class="bi bi-eye"></i> Vista previa Google</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="google-preview" id="googlePreview">
+                                                    <div class="google-title">Título de la página</div>
+                                                    <div class="google-url">https://ejemplo.com</div>
+                                                    <div class="google-description">Descripción de la página que
+                                                        aparecerá en los resultados de búsqueda.</div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="card mt-3" id="metaOutput" style="display: none;">
+                                            <div class="card-header">
+                                                <h5><i class="bi bi-code-slash"></i> Código HTML generado</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="mb-3">
+                                                    <button class="btn btn-outline-primary" onclick="copiarMeta()">
+                                                        <i class="bi bi-clipboard"></i> Copiar código
+                                                    </button>
+                                                </div>
+                                                <textarea class="form-control" id="metaHtml" rows="15"
+                                                    readonly></textarea>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- COMANDOS TAB -->
+            <div class="tab-pane fade" id="comandos" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-dark text-white">
+                                <h3 class="mb-0"><i class="bi bi-terminal"></i> Comandos Windows/Linux</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <h4><i class="bi bi-windows"></i> Windows</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Comando</th>
+                                                        <th>Descripción</th>
+                                                        <th>Ejemplo</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><code>net user</code></td>
+                                                        <td>Muestra usuarios del sistema</td>
+                                                        <td><code>net user</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>net user [user] [pass] /add</code></td>
+                                                        <td>Crea nuevo usuario</td>
+                                                        <td><code>net user dev_junior P@ssw0rd! /add</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>icacls</code></td>
+                                                        <td>Gestiona permisos NTFS</td>
+                                                        <td><code>icacls uploads /grant IIS_IUSRS:(OI)(CI)M</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>mkdir</code></td>
+                                                        <td>Crea carpeta</td>
+                                                        <td><code>mkdir C:\proyectos\nuevo_cliente</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>copy</code></td>
+                                                        <td>Copia archivo</td>
+                                                        <td><code>copy logo.png C:\proyectos\web\assets\</code></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h4><i class="bi bi-terminal"></i> Linux</h4>
+                                        <div class="table-responsive">
+                                            <table class="table table-striped">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Comando</th>
+                                                        <th>Descripción</th>
+                                                        <th>Ejemplo</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td><code>chmod</code></td>
+                                                        <td>Cambia permisos</td>
+                                                        <td><code>chmod 755 carpeta/</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>chown</code></td>
+                                                        <td>Cambia propietario</td>
+                                                        <td><code>chown www-data:www-data archivo.html</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>ls -l</code></td>
+                                                        <td>Lista archivos con permisos</td>
+                                                        <td><code>ls -l /var/www/html</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>cp -r</code></td>
+                                                        <td>Copia recursivo</td>
+                                                        <td><code>cp -r proyecto/ /var/www/html/</code></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td><code>mv</code></td>
+                                                        <td>Mueve/renombra</td>
+                                                        <td><code>mv config.sample.php config.php</code></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                        <h4>Permisos octales en Linux</h4>
+                                        <div class="row tarjeta-octales">
+                                            <div class="col-md-3">
+                                                <div class="card text-center">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">755</h5>
+                                                        <p class="card-text">
+                                                            <strong>rwxr-xr-x</strong><br>
+                                                            Estándar para carpetas
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card text-center">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">644</h5>
+                                                        <p class="card-text">
+                                                            <strong>rw-r--r--</strong><br>
+                                                            Estándar para archivos
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card text-center">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">775</h5>
+                                                        <p class="card-text">
+                                                            <strong>rwxrwxr-x</strong><br>
+                                                            Carpetas con escritura grupal
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="card text-center bg-warning">
+                                                    <div class="card-body">
+                                                        <h5 class="card-title">777</h5>
+                                                        <p class="card-text">
+                                                            <strong>rwxrwxrwx</strong><br>
+                                                            Todos los permisos<br>
+                                                            <small>¡Cuidado!</small>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ACTIVIDADES TAB -->
+            <div class="tab-pane fade" id="actividades" role="tabpanel">
+                <div class="row mt-4">
+                    <div class="col-12">
+                        <div class="card shadow-sm">
+                            <div class="card-header bg-primary text-white">
+                                <h3 class="mb-0"><i class="bi bi-journal-check"></i> Actividades Prácticas</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Ejercicio 1: Configurar conexión SFTP</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Aprende a configurar FileZilla para conectarte a un servidor.</p>
+                                                <ol>
+                                                    <li>Abre FileZilla</li>
+                                                    <li>Accede al Gestor de Sitios</li>
+                                                    <li>Crea un nuevo sitio con protocolo SFTP</li>
+                                                    <li>Configura los datos de conexión</li>
+                                                    <li>Realiza la primera conexión</li>
+                                                </ol>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="ejercicio1">
+                                                    <label class="form-check-label" for="ejercicio1">
+                                                        Completado
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Ejercicio 2: Crear sitemap para proyecto local</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Genera un sitemap.xml para tu proyecto de desarrollo.</p>
+                                                <ol>
+                                                    <li>Identifica las páginas de tu proyecto</li>
+                                                    <li>Añade las URLs usando el generador</li>
+                                                    <li>Configura prioridades y frecuencias</li>
+                                                    <li>Genera y descarga el sitemap.xml</li>
+                                                    <li>Coloca el archivo en la raíz del proyecto</li>
+                                                </ol>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="ejercicio2">
+                                                    <label class="form-check-label" for="ejercicio2">
+                                                        Completado
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Ejercicio 3: Configurar robots.txt para blog</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Crea un archivo robots.txt que proteja áreas sensibles.</p>
+                                                <ol>
+                                                    <li>Identifica qué páginas no deben indexarse</li>
+                                                    <li>Usa el generador para crear reglas</li>
+                                                    <li>Añade la URL del sitemap</li>
+                                                    <li>Genera y descarga robots.txt</li>
+                                                    <li>Sube el archivo a la raíz del servidor</li>
+                                                </ol>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="ejercicio3">
+                                                    <label class="form-check-label" for="ejercicio3">
+                                                        Completado
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="card">
+                                            <div class="card-header">
+                                                <h5>Ejercicio 4: Optimizar meta etiquetas</h5>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Crea meta etiquetas optimizadas para SEO.</p>
+                                                <ol>
+                                                    <li>Escribe un título atractivo (máx. 60 caracteres)</li>
+                                                    <li>Redacta una descripción convincente</li>
+                                                    <li>Configura Open Graph para redes sociales</li>
+                                                    <li>Añade Twitter Cards</li>
+                                                    <li>Implementa las etiquetas en tu HTML</li>
+                                                </ol>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" id="ejercicio4">
+                                                    <label class="form-check-label" for="ejercicio4">
+                                                        Completado
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="row mt-4">
+                                    <div class="col-12">
+                                        <div class="card bg-success text-white">
+                                            <div class="card-body text-center">
+                                                <h5>Progreso total</h5>
+                                                <div class="progress" style="height: 20px;">
+                                                    <div class="progress-bar" role="progressbar" style="width: 0%"
+                                                        id="progressBar">
+                                                        0%
+                                                    </div>
+                                                </div>
+                                                <p class="mt-2 mb-0">Ejercicios completados: <span
+                                                        id="completedCount">0</span>/4</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast notifications -->
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+        <div id="toast" class="toast" role="alert">
+            <div class="toast-header">
+                <i class="bi bi-info-circle-fill text-primary me-2"></i>
+                <strong class="me-auto">Información</strong>
+                <button type="button" class="btn-close" data-bs-dismiss="toast"></button>
+            </div>
+            <div class="toast-body" id="toastMessage">
+                Mensaje de notificación
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
