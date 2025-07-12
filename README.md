@@ -41,28 +41,30 @@ Esta aplicación web educativa proporciona herramientas prácticas y teoría par
 ## ⚡ Instalación y Uso
 
 ### 1. Clonar el repositorio
-git clone [URL_DEL_REPOSITORIO]
+git clone `https://github.com/ifcd0110valladolid2025/guia-publicacion-web.git`
 cd guia-publicacion-web
-```
+
 
 ### 2. Instalar dependencias
 
 npm install
-```
+
 
 ### 3. Ejecutar en modo desarrollo
 npm run dev
-```
+
 La aplicación estará disponible en `http://localhost:5173`
 
 ### 4. Construir para producción
 npm run build
-```
+
+La aplicación estará disponible en `https://ifcd0110valladolid2025.github.io/guia-publicacion-web/` 
+
 Los archivos optimizados se generarán en la carpeta `dist/`
 
 ## 📁 Estructura del Proyecto
 
-```
+
 guia-publicacion-web/
 ├── index.html              # Página principal
 ├── main.js                 # Lógica principal de la aplicación
@@ -71,7 +73,7 @@ guia-publicacion-web/
 ├── vite.config.js          # Configuración de Vite
 ├── dist/                   # Archivos de producción (generados)
 └── README.md              # Este archivo
-```
+
 
 ## 🎓 Objetivos de Aprendizaje
 
@@ -95,7 +97,7 @@ npm run build
 
 # Previsualizar build de producción
 npm run preview
-```
+
 
 ### Estructura del Código
 
@@ -132,16 +134,16 @@ npm run preview
 
 ## 🤝 Contribuir
 
-1. Fork el proyecto
-2. Crea una rama para tu feature (`git checkout -b feature/AmazingFeature`)
-3. Commit tus cambios (`git commit -m 'Add some AmazingFeature'`)
+1. Fork del proyecto
+2. Crea una rama para tu característica (`git checkout -b feature/AmazingFeature`)
+3. Commiea tus cambios (`git commit -m 'Add some AmazingFeature'`)
 4. Push a la rama (`git push origin feature/AmazingFeature`)
 5. Abre un Pull Request
 
 ## 📝 Notas de Desarrollo
 
 ### Migración a Vite
-Este proyecto ha sido migrado de JavaScript vanilla a un entorno moderno con Vite para:
+Este proyecto está siendo migrado de JavaScript vanilla a un entorno moderno con Vite para:
 - Hot Module Replacement (HMR) instantáneo
 - Optimización automática de assets
 - Soporte nativo para ES6 modules
