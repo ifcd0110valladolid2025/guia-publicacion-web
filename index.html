@@ -254,7 +254,7 @@
                                 <h3 class="mb-0"><i class="bi bi-cloud-upload"></i> FTP/SFTP y FileZilla</h3>
                             </div>
                             <div class="card-body">
-                                <div class="row">
+                                <div class="row text-white">
                                     <div class="col-12">
                                         <h4 class="text-white"><i class="bi bi-info-circle text-info"></i> ¿Qué son FTP
                                             y SFTP? Fundamentos de la Transferencia de Archivos Web</h4>
@@ -309,8 +309,8 @@
                                             <li>
                                                 <strong>Definición:</strong> A diferencia de lo que su nombre podría
                                                 sugerir, SFTP (SSH File Transfer Protocol) no es simplemente una versión
-                                                "segura" de FTP. Es un "protocolo de transferencia de archivos
-                                                completamente diferente" que opera sobre el protocolo "SSH (Secure
+                                                "segura" de FTP. Es un protocolo de transferencia de archivos
+                                                completamente diferente que opera sobre el protocolo "SSH (Secure
                                                 Shell)". SSH proporciona un canal seguro para la comunicación de datos
                                                 entre dos ordenadores en una red insegura.
                                             </li>
@@ -334,7 +334,7 @@
 
                                         <p class="mt-4 text-white">
                                             Para interactuar con estos protocolos y subir tus archivos al servidor,
-                                            necesitarás un "cliente FTP/SFTP". Estos programas actúan como una
+                                            necesitarás un cliente FTP/SFTP. Estos programas actúan como una
                                             interfaz gráfica que te permite navegar por los archivos de tu ordenador y
                                             los del servidor remoto, facilitando el proceso de arrastrar y soltar.
                                         </p>
@@ -367,6 +367,41 @@
                                                 web.</p>
                                         </div>
                                     </div>
+                                </div>
+                                <div class="col-12 text-white">
+                                    <h4 class="text-white">Comandos para Transferir Archivos</h4>
+                                    <p class="text-white">
+                                        Existen varios métodos para transferir archivos a través de FTP y SFTP.
+                                    <ul>
+                                        <li>
+                                            <strong>FTP desde terminal (Linux):</strong>
+                                            <pre><code>ftp servidor.com
+                                        # Usuario y contraseña cuando lo solicite
+                                        put archivo.html
+                                        get archivo.html
+                                        bye</code></pre>
+                                        </li>
+                                        <li>
+                                            <strong>SFTP desde terminal (Linux):</strong>
+                                            <pre><code>sftp usuario@servidor.com
+                                        put archivo.html
+                                        get archivo.html
+                                        bye</code></pre>
+                                        </li>
+                                        <li>
+                                            <strong>FTP/SFTP con FileZilla:</strong>
+                                            <ul>
+                                                <li>Arrastra y suelta archivos entre el panel local y el remoto.</li>
+                                                <li>Haz clic derecho para cambiar permisos o renombrar archivos.</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <strong>Comando GET/PUT (FTP/SFTP):</strong>
+                                            <pre><code>put archivo.txt   # Subir archivo al servidor
+                                        get archivo.txt   # Descargar archivo del servidor</code></pre>
+                                        </li>
+                                    </ul>
+                                    </p>
                                 </div>
                                 <div class="row">
                                     <div class="col-md-6">
@@ -1160,7 +1195,8 @@
                                 <h3 class="mb-0"><i class="bi bi-terminal"></i> Comandos Windows/Linux</h3>
                             </div>
                             <div class="card-body">
-                                <p class="text-white">La publicación de aplicaciones web no solo implica subir archivos, sino también
+                                <p class="text-white">La publicación de aplicaciones web no solo implica subir archivos,
+                                    sino también
                                     "interactuar directamente con el servidor". Comprender y utilizar comandos de
                                     línea de comandos, ya sean de Windows (CMD/PowerShell) o Linux (Bash), es una
                                     habilidad fundamental para cualquier desarrollador o administrador web. Estos
