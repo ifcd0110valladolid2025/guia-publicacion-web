@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /public/
+Disallow: /vscode/
+Sitemap: https://ifcd0110valladolid2025.github.io/guia-publicacion-web/sitemap.xml

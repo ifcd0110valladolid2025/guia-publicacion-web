@@ -391,6 +391,92 @@ pre code {
   cursor: not-allowed;
 }
 
+/*NAV*/
+.navbar {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%) !important;
+  box-shadow: 0 8px 32px rgba(13, 110, 253, 0.3);
+  border-bottom: 3px solid #0a58ca;
+  padding: 1.2rem 0;
+}
+
+.navbar-brand {
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+
+.navbar-brand:hover {
+  transform: scale(1.05);
+  text-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand i {
+  margin-right: 0.5rem;
+  animation: spin-slow 3s linear infinite;
+}
+
+@keyframes spin-slow {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.nav-link.btn-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  transition: all 0.3s ease;
+  position: relative;
+  margin: 0 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.nav-link.btn-link::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.nav-link.btn-link:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px);
+  text-shadow: 0 0 10px rgba(255, 193, 7, 0.5);
+}
+
+.nav-link.btn-link:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 991.98px) {
+  .navbar-collapse {
+    background: linear-gradient(180deg, #0d6efd 0%, #0a58ca 100%);
+    border-radius: 0.5rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-link.btn-link {
+    border-left: 3px solid transparent;
+    padding-left: 1.5rem !important;
+  }
+
+  .nav-link.btn-link:hover {
+    border-left-color: #ffc107;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+}
+
 /* Elementos de formulario */
 .form-control {
   display: block;
@@ -925,89 +1011,104 @@ select.form-control {
 
 /* Estilos para la vista previa de Twitter */
 .twitter-preview-card {
-    border: 1px solid var(--color-card-border);
-    border-radius: var(--radius-sm);
-    overflow: hidden;
-    background-color: var(--color-surface);
-    margin-top: var(--space-16);
-    display: flex; /* Usar flexbox para el layout */
-    flex-direction: column; /* Por defecto, la imagen grande va arriba y el texto abajo */
-    max-width: 500px; /* Ancho máximo para la tarjeta de Twitter */
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background-color: var(--color-surface);
+  margin-top: var(--space-16);
+  display: flex;
+  /* Usar flexbox para el layout */
+  flex-direction: column;
+  /* Por defecto, la imagen grande va arriba y el texto abajo */
+  max-width: 500px;
+  /* Ancho máximo para la tarjeta de Twitter */
 }
 
 .twitter-preview-image-container {
-    width: 100%;
-    /* Por defecto, ocupa todo el ancho para summary_large_image */
+  width: 100%;
+  /* Por defecto, ocupa todo el ancho para summary_large_image */
 }
 
 .twitter-preview-image-container img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .twitter-preview-content {
-    padding: var(--space-12);
-    display: flex;
-    flex-direction: column;
-    /* El contenido siempre es vertical */
+  padding: var(--space-12);
+  display: flex;
+  flex-direction: column;
+  /* El contenido siempre es vertical */
 }
 
 .twitter-preview-title {
-    font-size: var(--font-size-md);
-    font-weight: var(--font-weight-semibold);
-    color: var(--color-text);
-    margin-bottom: var(--space-4);
-    line-height: 1.3;
+  font-size: var(--font-size-md);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-text);
+  margin-bottom: var(--space-4);
+  line-height: 1.3;
 }
 
 .twitter-preview-description {
-    font-size: var(--font-size-sm);
-    color: var(--color-text-secondary);
-    line-height: 1.4;
-    margin-bottom: var(--space-8);
-    display: -webkit-box;
-    -webkit-line-clamp: 2; /* Limitar a 2 líneas */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  font-size: var(--font-size-sm);
+  color: var(--color-text-secondary);
+  line-height: 1.4;
+  margin-bottom: var(--space-8);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  /* Limitar a 2 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .twitter-preview-url {
-    font-size: var(--font-size-xs);
-    color: var(--color-primary);
-    text-transform: lowercase;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
+  font-size: var(--font-size-xs);
+  color: var(--color-primary);
+  text-transform: lowercase;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 /* Estilos específicos para la "Summary Card" (imagen pequeña) */
 .twitter-preview-card.summary {
-    flex-direction: row; /* La imagen y el texto van lado a lado */
-    align-items: flex-start;
+  flex-direction: row;
+  /* La imagen y el texto van lado a lado */
+  align-items: flex-start;
 }
 
 .twitter-preview-card.summary .twitter-preview-image-container {
-    width: 120px; /* Ancho fijo para la imagen pequeña */
-    min-width: 120px; /* Evitar que se encoja */
-    height: 120px; /* Altura fija para la imagen pequeña */
-    overflow: hidden;
-    border-radius: var(--radius-sm); /* Bordes redondeados para la imagen */
-    margin-right: var(--space-12); /* Espacio entre imagen y texto */
-    flex-shrink: 0; /* No permitir que la imagen se encoja */
+  width: 120px;
+  /* Ancho fijo para la imagen pequeña */
+  min-width: 120px;
+  /* Evitar que se encoja */
+  height: 120px;
+  /* Altura fija para la imagen pequeña */
+  overflow: hidden;
+  border-radius: var(--radius-sm);
+  /* Bordes redondeados para la imagen */
+  margin-right: var(--space-12);
+  /* Espacio entre imagen y texto */
+  flex-shrink: 0;
+  /* No permitir que la imagen se encoja */
 }
 
 .twitter-preview-card.summary .twitter-preview-image-container img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover; /* Asegura que la imagen cubra el espacio sin distorsionarse */
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  /* Asegura que la imagen cubra el espacio sin distorsionarse */
 }
 
 .twitter-preview-card.summary .twitter-preview-content {
-    flex-grow: 1; /* El contenido ocupa el espacio restante */
-    padding: var(--space-12); /* Ajustar padding si es necesario */
+  flex-grow: 1;
+  /* El contenido ocupa el espacio restante */
+  padding: var(--space-12);
+  /* Ajustar padding si es necesario */
 }
+
 /* Visualización de código */
 textarea[readonly] {
   background-color: var(--color-surface);
@@ -1268,6 +1369,112 @@ textarea[readonly] {
 
 .texto-tarjeta {
   color: rgb(154, 207, 74);
+}
+
+/*FOOTER*/
+
+footer {
+  background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+  border-top: 3px solid #0d6efd;
+  margin-top: auto;
+  padding: 3rem 0 !important;
+}
+
+footer a {
+  transition: color 0.3s ease, text-decoration-color 0.3s ease;
+  text-decoration: none;
+  position: relative;
+}
+
+footer a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #0d6efd;
+  transition: width 0.3s ease;
+}
+
+footer a:hover::after {
+  width: 100%;
+}
+
+footer p {
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  letter-spacing: 0.5px;
+}
+
+footer .row>div {
+  padding: 1rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+footer .row>div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(13, 110, 253, 0.15);
+}
+
+.cookie-banner {
+  background: linear-gradient(135deg, #0d6efd 0%, #0a58ca 100%);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(13, 110, 253, 0.3);
+  animation: slideUp 0.4s ease-out;
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.cookie-banner button {
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.cookie-banner button:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  position: relative;
+  overflow: hidden;
+}
+
+footer::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #0d6efd, transparent);
+  animation: shine 3s infinite;
+}
+
+@keyframes shine {
+  0% {
+    left: -100%;
+  }
+
+  50% {
+    left: 100%;
+  }
+
+  100% {
+    left: 100%;
+  }
 }
 
 /*BANNER COOKIES*/
