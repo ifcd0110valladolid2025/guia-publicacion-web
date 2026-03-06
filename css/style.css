@@ -1269,3 +1269,24 @@ textarea[readonly] {
 .texto-tarjeta {
   color: rgb(154, 207, 74);
 }
+
+/*BANNER COOKIES*/
+.cookie-banner {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1080;
+  background: rgba(20, 20, 20, 0.96);
+  color: #fff;
+  box-shadow: 0 -6px 20px rgba(0, 0, 0, 0.2);
+  padding: 1rem 0;
+}
+
+.cookie-banner[hidden] {
+  display: none !important;
+}
+
+.cookie-banner__content p {
+  font-size: 0.95rem;
+}

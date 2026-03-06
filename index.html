@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DWB928WHXE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-DWB928WHXE');
+    </script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Profe Ricardo">
@@ -32,7 +40,7 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="bg-dark">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
         <div class="container">
@@ -78,7 +86,7 @@
     </nav>
 
     <!-- Main Content -->
-    <div class="container mt-4">
+    <div class="container mt-4 bg-light p-4 rounded shadow-sm">
         <!-- Tab Navigation -->
         <ul class="nav nav-tabs" id="mainTabs" role="tablist">
             <li class="nav-item" role="presentation">
@@ -132,15 +140,16 @@
                                 <h3 class="mb-0"><i class="bi bi-info-circle"></i> Módulo MF0952_2 - Publicación de
                                     páginas web</h3>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body bg-secondary text-white">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <header class="text-center mb-4 bg-gradient">
-                                        <h3 class="text-warning">⚠️ ¡Atención!</h3>
-                                        <p class="lead text-warning">Cambia tu navegador al modo oscuro para visualizar este sitio</p>
+                                        <header class="text-center mb-4">
+                                            <h1 class="display-4"><i class="bi bi-globe"></i> Bienvenido a tu Guía de
+                                                Publicación Web</h1>
+                                            <p class="lead">Domina las habilidades necesarias para publicar y optimizar
+                                                tus sitios web con éxito.</p>
                                         </header>
-                                        
-                                        <h4>Introducción</h4>
+
                                         <p class="lead">
                                             Este módulo formativo te enseña los fundamentos de la publicación de páginas
                                             web,
@@ -254,12 +263,12 @@
             <div class="tab-pane fade" id="ftp" role="tabpanel">
                 <div class="row mt-4">
                     <div class="col-12">
-                        <div class="card shadow-sm">
+                        <div class="card shadow-sm bg-dark">
                             <div class="card-header bg-success text-white">
                                 <h3 class="mb-0"><i class="bi bi-cloud-upload"></i> FTP/SFTP y FileZilla</h3>
                             </div>
-                            <div class="card-body">
-                                <div class="row text-white">
+                            <div class="card-body bg-secondary text-white">
+                                <div class="row">
                                     <div class="col-12">
                                         <h4 class="text-white"><i class="bi bi-info-circle text-info"></i> ¿Qué son FTP
                                             y SFTP? Fundamentos de la Transferencia de Archivos Web</h4>
@@ -952,7 +961,7 @@
                             <div class="card-header bg-secondary text-white">
                                 <h3 class="mb-0"><i class="bi bi-tag"></i> Generador de Meta Etiquetas</h3>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body  bg-secondary text-dark">
                                 <h4 class="text-white"><i class="bi bi-code-square"></i> Entendiendo las Meta Etiquetas
                                     HTML y cómo usarlas</h4>
                                 <p class="text-white">
@@ -1199,7 +1208,7 @@
                             <div class="card-header bg-dark text-white">
                                 <h3 class="mb-0"><i class="bi bi-terminal"></i> Comandos Windows/Linux</h3>
                             </div>
-                            <div class="card-body">
+                            <div class="card-body bg-secondary">
                                 <p class="text-white">La publicación de aplicaciones web no solo implica subir archivos,
                                     sino también
                                     "interactuar directamente con el servidor". Comprender y utilizar comandos de
@@ -1369,7 +1378,7 @@
                                             <div class="card-header">
                                                 <h5>Ejercicio 1: Configurar conexión SFTP</h5>
                                             </div>
-                                            <div class="card-body  texto-tarjeta">
+                                            <div class="card-body  texto-tarjeta bg-secondary">
                                                 <p>Aprende a configurar FileZilla para conectarte a un servidor.</p>
                                                 <ol>
                                                     <li>Abre FileZilla</li>
@@ -1392,7 +1401,7 @@
                                             <div class="card-header">
                                                 <h5>Ejercicio 2: Crear sitemap para proyecto local</h5>
                                             </div>
-                                            <div class="card-body  texto-tarjeta">
+                                            <div class="card-body  texto-tarjeta bg-secondary">
                                                 <p>Genera un sitemap.xml para tu proyecto de desarrollo.</p>
                                                 <ol>
                                                     <li>Identifica las páginas de tu proyecto</li>
@@ -1418,7 +1427,7 @@
                                             <div class="card-header">
                                                 <h5>Ejercicio 3: Configurar robots.txt para blog</h5>
                                             </div>
-                                            <div class="card-body texto-tarjeta">
+                                            <div class="card-body texto-tarjeta  bg-secondary">
                                                 <p>Crea un archivo robots.txt que proteja áreas sensibles.</p>
                                                 <ol>
                                                     <li>Identifica qué páginas no deben indexarse</li>
@@ -1441,7 +1450,7 @@
                                             <div class="card-header">
                                                 <h5>Ejercicio 4: Optimizar meta etiquetas</h5>
                                             </div>
-                                            <div class="card-body  texto-tarjeta">
+                                            <div class="card-body  texto-tarjeta bg-secondary">
                                                 <p>Crea meta etiquetas optimizadas para SEO.</p>
                                                 <ol>
                                                     <li>Escribe un título atractivo (máx. 60 caracteres)</li>
@@ -1500,6 +1509,30 @@
         </div>
     </div>
     <footer class="bg-dark text-white mt-5 p-4">
+        <!-- Banner de consentimiento -->
+        <div id="cookie-banner" class="cookie-banner" role="dialog" aria-live="polite"
+            aria-label="Consentimiento de cookies" hidden>
+            <div class="cookie-banner__content container">
+                <div class="row align-items-center g-3">
+                    <div class="col-lg-8">
+                        <p class="mb-0">
+                            Esta web utiliza cookies de analítica para medir visitas con Google Analytics 4.
+                            Puedes aceptar o rechazar su uso.
+                        </p>
+                    </div>
+                    <div class="col-lg-4 text-lg-end">
+                        <button id="cookie-reject" class="btn btn-outline-light me-2 mb-2 mb-lg-0" type="button">
+                            Rechazar
+                        </button>
+                        <button id="cookie-accept" class="btn btn-warning" type="button">
+                            Aceptar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="./js/consent-ga4.js"></script>
         <div class="container text-center">
             <div class="row">
                 <div class="col-md-6">
